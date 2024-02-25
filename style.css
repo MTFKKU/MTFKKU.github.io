@@ -26,6 +26,7 @@
   background-color: var(--less_dark); /* Change to desired color */
 }
 
+
 .container {
   font-family: "Roboto Mono", monospace;
   display: flex;
@@ -99,6 +100,10 @@ img {
 .usage p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.relative_logo img {
+  width: 100px;
 }
 
 footer {
