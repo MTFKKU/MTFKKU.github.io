@@ -29,6 +29,7 @@
 .container {
   font-family: "Roboto Mono", monospace;
   display: flex;
+  min-height: calc(100vh);
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -101,14 +102,19 @@ img {
 }
 
 footer {
-  font-family: "Roboto Mono", monospace;
+  width: 100%;
   background: #23252a;
-  font-size: 12px;
   padding: 10px 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+footer a,
+footer p {
+  font-size: 12px !important;
 }
 
 footer a {
@@ -166,7 +172,8 @@ footer p {
   footer {
     padding: 20px 0;
   }
-  footer * {
-    font-size: 16px;
+  footer a,
+  footer p {
+    font-size: 16px !important;
   }
 }
