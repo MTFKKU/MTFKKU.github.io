@@ -9,12 +9,13 @@
 }
 
 :root {
-  --dark: #1a1b1c;
+  --dark: #080808;
   --less_dark: #23252a;
 }
 
 ::selection {
-  background: var(--less_dark);
+  background: white;
+  color: black;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +31,6 @@ b {
   color: #316fb8;
 }
 
-
 .container {
   font-family: "Roboto Mono", monospace;
   display: flex;
@@ -42,8 +42,8 @@ b {
   padding: 30px 10px 30px 10px;
   background: var(--dark);
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, #232325 0.2px, transparent 1px),
-    linear-gradient(to bottom, #232325 0.2px, transparent 1px);
+  /* background-image: linear-gradient(to right, #232325 0.2px, transparent 1px), */
+  /* linear-gradient(to bottom, #232325 0.2px, transparent 1px); */
 }
 
 .container p {
@@ -65,37 +65,35 @@ img {
 .download a {
   text-decoration: none;
   cursor: pointer;
-  color: #316fb8;
-  background: #292d34;
+  color: blue;
+  background: #f8f8f8;
   padding: 5px 20px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .download a:hover {
-  background: #4c525d;
-  color: #0f233a;
+  background: #e4e7ed;
+  color: black;
 }
 
-.about {
-  width: 85%;
-  text-align: center;
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 
 .left-align {
   text-align: left;
-}
-
-.about p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.634);
 }
 
 .user-usage {
   width: 100%;
   margin: 10px 0;
-  justify-content: center;
-  align-items: center;
 }
 
 .user-usage video {
@@ -103,12 +101,21 @@ img {
 }
 
 .usage {
-  width: 85%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.usage p {
+.usage li, p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(244, 237, 237, 0.774);
+}
+
+.usage div {
+  text-align: start;
 }
 
 .relative_logo img {
@@ -180,8 +187,8 @@ footer p {
   .usage {
     margin-top: -30px;
   }
-  .usage p {
-    font-size: 18px;
+  .usage li, .usage p {
+    font-size: 16px;
   }
   footer {
     padding: 20px 0;
