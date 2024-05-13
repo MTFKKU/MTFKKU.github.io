@@ -1,6 +1,6 @@
 const mtfContainer = document.getElementById("mtfapp-container");
 const mtfDetails = [
-  ["Load one or many DICOM files, and wait.", "images/mtfapp/0.png"],
+  ["Load DICOM files.", "images/mtfapp/0.png"],
   [
     "Automatic processing of values: max, min, contrast and modulation.",
     "images/mtfapp/1.png",
