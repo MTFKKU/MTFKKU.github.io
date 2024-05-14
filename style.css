@@ -56,7 +56,8 @@ nav a {
 }
 
 #index {
-  background: url(/images/banner.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url(images/banner.jpeg);
   background-size: cover;
 }
 
@@ -136,7 +137,7 @@ p {
 
 .app img {
   transition: transform 0.2s ease-out;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
 }
 
 .app:hover img {
@@ -148,6 +149,7 @@ footer {
   display: flex;
   width: 70%;
   margin: 50px 0 20px 0;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -168,7 +170,7 @@ footer span a {
 
 /* mtfapp */
 #mtfapp {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url(images/apps/mtfapp.jpeg);
   background-size: cover;
 }
