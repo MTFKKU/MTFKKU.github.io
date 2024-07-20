@@ -137,12 +137,12 @@ p {
 
 .app img {
   transition: transform 0.2s ease-out;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
 }
 
 .app:hover img {
   transform: scale(1.1);
-  filter: brightness(0.7);
+  filter: brightness(0.8);
 }
 
 footer {
@@ -175,6 +175,12 @@ footer span a {
   background-size: cover;
 }
 
+#eidi {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(images/apps/eidi.jpg);
+  background-size: cover;
+}
+
 .detail {
   font-size: 40px;
   width: 70%;
@@ -204,6 +210,64 @@ footer span a {
   align-items: center;
 }
 
+/* EIDI converter */
+.eidi-container {
+  width: 100%;
+  padding: 50px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.eidi-input h3,
+.eidi-result h3 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.eidi-input input {
+  width: 8ch;
+  border: none;
+  outline: none;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+  background: transparent;
+}
+
+.eidi-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.eidi-input div {
+  text-align: center;
+}
+
+.eidi-result {
+  text-align: center;
+}
+
+.eidi-result h1 {
+  font-size: 200px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /*  media screen */
 
 /* tablet */
@@ -222,6 +286,23 @@ footer span a {
   .container p {
     font-size: smaller;
   }
+  .eidi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .eidi-input {
+    flex-direction: row;
+  }
+  .eidi-input h3 {
+    font-size: 16px;
+  }
+  .eidi-input input {
+    font-size: 50px;
+  }
+  .eidi-result h1 {
+    font-size: 100px;
+  }
 }
 
 /* wide mobile */
@@ -231,6 +312,9 @@ footer span a {
   }
   .banner p {
     font-size: 18px;
+  }
+  .eidi-input {
+    flex-direction: column;
   }
 }
 

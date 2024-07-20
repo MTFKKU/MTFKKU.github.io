@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EIDI converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo/logow2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html#apps">Apps</a></li>
+      <li><a href="/index.html#about">About Us</a></li>
+    </nav>
+    <div class="banner" id="eidi">
+      <h1>EIDI converter</h1>
+      <p>EI to EIT to DI</p>
+      <p>
+        effortlessly converts
+      </p>
+    </div>
+    <div class="eidi-container">
+      <div class="eidi-input">
+        <div>
+          <h3>EI (exposure index)</h3>
+          <input type="number" id="EI" placeholder="570" />
+        </div>
+        <div>
+          <h3>EIT (exposure index target)</h3>
+          <input type="number" id="EIT" placeholder="500" />
+        </div>
+        <div>
+          <h3>DI (deviation index)</h3>
+          <input type="number" id="DI" placeholder="0.57" />
+        </div>
+      </div>
+      <div class="eidi-result">
+        <h3 id="resultText0">EI: 570, EIT: 500</h3>
+        <h1 id="resultNum">+0.57</h1>
+        <h3 id="resultText1">DI: +0.57 - Optimal Exposure</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Just enter the values.</h1>
+      <p>
+        Use the exposure index converter to check if it is optimally exposed.
+        <br />
+        Enter at least two values; it will automatically calculate as needed.
+      </p>
+    </div>
+
+    <footer>
+      <p>MTFKKU © 2024</p>
+      <span
+        ><a href="https://github.com/MTFKKU" target="_blank">github</a>
+        <a href="#" target="_blank">contact</a></span
+      >
+    </footer>
+
+    <script src="eidi.js"></script>
+  </body>
+</html>
