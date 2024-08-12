@@ -56,7 +56,7 @@ nav a {
 }
 
 #index {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url(images/banner.jpeg);
   background-size: cover;
 }
@@ -137,12 +137,12 @@ p {
 
 .app img {
   transition: transform 0.2s ease-out;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 
 .app:hover img {
   transform: scale(1.1);
-  filter: brightness(0.8);
+  filter: brightness(1);
 }
 
 footer {
@@ -341,4 +341,61 @@ input[type="number"] {
   .container {
     width: 90%;
   }
+}
+
+/* Video */
+.video-show {
+  font-size: 40px;
+  width: 70%;
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-show video {
+  width: 100%;
+}
+
+.slider {
+  width: 80%;
+  height: 150px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right, transparent, #c2e4eb, transparent
+  );
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(150px * 6);
+  position: relative;
+}
+
+.slider .list .item {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 100%;
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / 6) * (var(--pos) - 1));
+}
+
+.slider .list .item img {
+  width: 100%;
+}
+
+@keyframes autoRun {
+  from {
+    right: 100%;
+  }
+  to {
+    right: calc(150px * -1);
+  }
+}
+
+.slider:hover .item {
+  animation-play-state: paused!important;
 }
